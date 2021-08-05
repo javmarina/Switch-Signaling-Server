@@ -1,0 +1,17 @@
+{
+  "name": "signaling-server",
+  "version": "0.0.1",
+  "description": "Signaling server",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
