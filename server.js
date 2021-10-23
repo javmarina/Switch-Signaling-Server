@@ -7,9 +7,7 @@ const port = process.env.PORT || 3000;
 const http = require("http");
 const server = http.createServer(app);
 
-const io = require("socket.io")(server, {
-    transports: ["polling"]
-});
+const io = require("socket.io")(server);
 app.use(express.static(__dirname + "/public"));
 
 io.on("error", e => console.log(e));
